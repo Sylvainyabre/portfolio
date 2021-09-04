@@ -1,6 +1,6 @@
 {
-  "short_name": "Yabre Tech",
-  "name": "A personal website for Sylvain Yabre",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [],
   
   "start_url": ".",
