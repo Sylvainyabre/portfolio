@@ -1,0 +1,10 @@
+{
+  "short_name": "Yabre Tech",
+  "name": "A personal website for Sylvain Yabre",
+  "icons": [],
+  
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

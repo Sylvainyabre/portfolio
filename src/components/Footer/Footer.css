@@ -1,0 +1,19 @@
+.footer {
+  height: 20px;
+  bottom: 0 !important;
+  margin-top: 12px;
+  background-color: #19456b;
+  position: relative;
+  padding: 4rem 1rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  justify-content: space-between !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+small {
+  text-align: center;
+  justify-content: center;
+}

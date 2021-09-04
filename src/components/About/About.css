@@ -1,0 +1,62 @@
+.world_map{
+    position: relative;
+    display: block;
+    width: 85%;
+    position: relative;
+    margin: auto;
+    object-fit: cover;
+    padding: 10px 10px;
+}
+
+.about{
+    position: relative;
+    display: block;
+    height:100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(224, 228, 231);
+    color:rgb(6, 102, 167);
+    justify-content: center;
+}
+.presentation{ 
+    position: relative;
+    width: 70%;
+    margin:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+.hobbies{
+    position: relative;
+    width: 70%;
+    margin:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+.skills{
+    position: relative;
+    width: 70%;
+    margin:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+section>h1{
+    position: relative;
+    margin: auto;
+    
+}
+.lang-button{
+    position: relative;
+    margin: auto !important;
+    width: 50%;
+    left: 25%;
+    padding: 10px 10px !important;
+    margin-bottom: 20px !important;
+}
+figcaption{
+    color: rgb(29, 153, 29);
+    font-size: 12px;
+    margin: auto;
+}

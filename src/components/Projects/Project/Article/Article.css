@@ -1,0 +1,44 @@
+.article_display {
+  margin-top: 150px !important;
+  width: 80% !important;
+  border: 3px ridge;
+  margin: auto;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  justify-content: center;
+  font-size: 22px;
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+span.display_title {
+  border-radius: 14px;
+  font-size: 5rem;
+  margin: auto;
+  text-decoration: underline;
+  color: purple;
+  position: relative;
+}
+hr.title_divider {
+  color: rgba(128, 128, 128, 0.103);
+  border: 5px;
+}
+.article-content {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(88, 83, 83);
+  padding: 15px 15px;
+  width: 90%;
+  
+  position: relative;;
+  line-height: 2;
+}
+@media screen and (max-width: 950px) {
+  span.display_title {
+    font-size: 1rem;
+  }
+  .article_display{
+    width: 95%;
+  }
+}

@@ -1,0 +1,61 @@
+/*all the articles layed out on welcome page*/
+.projects {
+  padding: 5px 5px;
+  width: 90% !important;
+  margin-top: 20px !important;
+  justify-self: center;
+  margin: auto;
+}
+
+
+.cards {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  margin: auto;
+  justify-self: center;
+}
+.pagination-container {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: auto;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 270px;
+  margin-bottom: 0px;
+}
+.pagination-container a {
+  padding: 10px 10px;
+  border: 2px solid rgb(4, 73, 112);
+  color: blue;
+  display: inline-flex;
+  border-radius: 12px;
+}
+.pagination-container a:hover {
+  background: blue;
+  color: white;
+}
+.previous-link {
+  cursor: pointer;
+}
+.next-link {
+  cursor: pointer;
+}
+.pagination-active a {
+  color: white !important;
+  background-color: blue;
+}
+
+@media screen and (max-width: 750px) {
+  .projects {
+    width: 80%;
+    display: block;
+    margin: auto !important;
+    
+  }
+}

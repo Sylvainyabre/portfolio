@@ -1,0 +1,167 @@
+
+.nav-wrapper {
+  background: rgb(6, 108, 148);
+  height: 120px;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  position: relative;
+
+}
+
+.nav-links {
+  display: flex;
+  top: 30%!important;
+  right: 0% !important;
+  width: 50%;
+  justify-content: space-around;
+  margin:auto;
+  border-radius: 30px;
+  position: absolute;
+ 
+}
+.nav-link-item {
+  list-style: none;
+  position: relative;
+  margin-left: 10%;
+  margin: auto;
+}
+.nav-link-item:first-child {
+  margin-left: 5%;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  background: white;
+  color: black !important;
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 30px;
+  top: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.nav-link:hover {
+  color: rgb(7, 68, 160) !important;
+  font-size: 22px;
+  text-decoration: none;
+  
+}
+@keyframes change {
+  0%{
+    -webkit-text-stroke: 0.1vw #ebebeb;
+    color:violet
+  }
+  
+  50%{
+    -webkit-text-stroke: 0.25vw #c1c1c7;
+    color: rgb(149, 189, 189);
+  }
+  75%{
+    -webkit-text-stroke: 0.3vw white;
+    color: rgb(7, 68, 160);
+  }
+  100%{
+    -webkit-text-stroke: 0.2vw #f3f3f3;
+  }
+}
+.site-name-nav{
+    position: relative;
+    top:0;
+    font-size: 5vw;
+    -webkit-text-stroke: 0.2vw #f3f3f3;
+    color:#0a405f;
+    display: block;
+    font-family: 'Bowlby One SC';
+    left:16% ;
+    animation: change 10s infinite;
+}
+@media  screen and (max-width:768px) {
+
+  .site-name-nav{
+    position: relative;
+    margin-top:40px;
+   
+}
+}
+.site-logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top:12px;
+  margin-left: 5px;
+}
+
+.site-logo .logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-section{
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+/* Mobile navigation*/
+@media screen and (min-width: 950px) {
+  .nav-wide {
+    display: visible !important;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav-wide {
+    display: none !important;
+  }
+}
+.mobile-menu {
+  display: block;
+  
+  
+}
+.menu-icon {
+  color: white;
+  right: 5%;
+  position: absolute;
+  margin-top: 10%;
+}
+
+.mobile-link {
+  text-decoration: none;
+  font-size: 19px;
+  color: rgb(205, 224, 224);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mobile-link-item {
+  border-bottom: 1px rgb(210, 231, 231) solid;
+  list-style: none;
+  margin: auto;
+  text-decoration: none;
+}
+.nav-menu {
+  background: rgb(128, 124, 124);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100vh;
+  right: -60%;
+  justify-content: space-evenly;
+  z-index: 100;
+
+}
+
+.close-icon {
+  display: block;
+  color: white;
+  margin-bottom: 10%;
+}
+
+
