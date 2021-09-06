@@ -135,15 +135,20 @@
 
 .mobile-link {
   text-decoration: none;
-  font-size: 19px;
+  font-size: 20px;
   color: rgb(205, 224, 224);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .mobile-link-item {
+  position: relative;
+  width: 90%;
   border-bottom: 1px rgb(210, 231, 231) solid;
   list-style: none;
   margin: auto;
   text-decoration: none;
+  margin-bottom: 20px;
+ 
+ 
 }
 .nav-menu {
   background: rgb(128, 124, 124);
@@ -153,15 +158,21 @@
   width: 40%;
   height: 100vh;
   right: -60%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   z-index: 100;
 
 }
-
+.mobile-links{
+  top:25%;
+  position:absolute;
+}
 .close-icon {
   display: block;
-  color: white;
-  margin-bottom: 10%;
+  background: white;
+  position: absolute;
+  justify-self: center;
+   top: 5%;
+   right:40%;
 }
 
 

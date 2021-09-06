@@ -12,10 +12,9 @@ const MobileNav = () => {
 
   const mobileLinks = (
     <nav className="nav-menu">
+       <GrClose className="close-icon" onClick={() => setOpen(!open)} />
       <ul className="mobile-links">
-        <li className="mobile-link-item">
-          <GrClose className="close-icon" onClick={() => setOpen(!open)} />
-        </li>
+       
 
         <li className="mobile-link-item" onClick={() => setOpen(!open)}>
           <Link to="/" className="mobile-link">

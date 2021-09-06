@@ -5,6 +5,7 @@ import "./Article.css";
 const HtmlToReactParser = require("html-to-react").Parser;
 const htmlToReactParser = new HtmlToReactParser();
 
+
 const Article = () => {
   const { articleId } = useParams();
 
