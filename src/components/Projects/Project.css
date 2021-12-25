@@ -34,7 +34,7 @@
 }
 .pub_date{
   display: block;
-  transform: translateX(-100px);
+  
 }
 @media screen and (max-width: 470px) {
   .unit-article {

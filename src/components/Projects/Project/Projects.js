@@ -3,6 +3,9 @@ import "./Projects.css";
 import Project from "../Project";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
+import { ArticleCard } from './ArticleCard';
+import {Row,Spinner} from "react-bootstrap"
+import { API_URL ,PROFILE_URL} from "../../../utils/constants";
 
 
 function Projects() {
@@ -21,7 +24,7 @@ function Projects() {
     setPageNumber(selected);
   };
   useEffect(() => {
-    axios.get("https://sypartage.herokuapp.com/api/articles/").then((res) => {
+    axios.get(API_URL).then((res) => {
       if (res.statusText === "OK") {
         setArticles(res.data);
         setLoading(false);
@@ -31,7 +34,7 @@ function Projects() {
   }, []);
   useEffect(() => {
     axios
-      .get("https://sypartage.herokuapp.com/api/auth/profiles/1/")
+      .get(PROFILE_URL)
       .then((res) => {
         if (res.statusText === "OK") {
           setProfile(res.data);
@@ -41,12 +44,14 @@ function Projects() {
   }, []);
 
   const articlesDisplay = pageArticles.filter((art)=>art.status === "published").map((article) => (
-    <Project article={article} key={article.pub_date} profile={profile} />
+    
+    <ArticleCard article={article}  profile={profile} key={article.pub_date} />
+    
   ));
   return (
     <div className="projects-wrapper">
       <div className="projects ">
-        {loading ? <h2>LOADING... </h2> : <div className ="cards">{articlesDisplay}</div>}
+        {loading ? <Spinner/> : <Row xs={1} md={3} xl={8} className ="cards">{articlesDisplay}</Row>}
         <ReactPaginate
           previousLabel="Previous"
           nextLabel="Next"

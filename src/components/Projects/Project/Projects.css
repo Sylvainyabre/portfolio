@@ -50,7 +50,9 @@
   color: white !important;
   background-color: blue;
 }
-
+a:hover{
+  text-decoration: none;
+}
 @media screen and (max-width: 750px) {
   .projects {
     width: 80%;

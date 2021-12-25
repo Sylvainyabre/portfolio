@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
+
 export const ExtLink = ({ to, text }) => {
   return <Link to={to}>{text}</Link>;
 };
@@ -18,7 +19,7 @@ function Home() {
       : setLanguage(languages[0]);
   };
   return (
-    <div className="home-wrapper">
+    <div className="home-wrapper ">
       <div className="home">
         <div className="left">
           <img
@@ -59,6 +60,7 @@ function Home() {
               </p>
             </section>
           )}
+
           <button
             className="btn btn-primary"
             onClick={() => changeLanguage(language)}

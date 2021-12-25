@@ -1,7 +1,9 @@
 .article_display {
   margin-top: 150px !important;
+  margin-bottom: 50px !important;
   width: 80% !important;
   border: 3px ridge;
+  
   margin: auto;
   padding: 15px 15px;
   box-sizing: border-box;
@@ -11,6 +13,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
+  background: rgb(223, 222, 222);
 }
 
 span.display_title {
@@ -18,12 +21,18 @@ span.display_title {
   font-size: 5rem;
   margin: auto;
   text-decoration: underline;
-  color: purple;
+  color: rgb(101, 137, 179);
   position: relative;
 }
 hr.title_divider {
   color: rgba(128, 128, 128, 0.103);
   border: 5px;
+}
+h6>i{
+  color:rgb(78, 103, 146)
+}
+.article_page{
+  background: rgb(224, 228, 231);
 }
 .article-content {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -34,6 +43,7 @@ hr.title_divider {
   position: relative;;
   line-height: 2;
 }
+
 @media screen and (max-width: 950px) {
   span.display_title {
     font-size: 1rem;
@@ -42,3 +52,4 @@ hr.title_divider {
     width: 95%;
   }
 }
+

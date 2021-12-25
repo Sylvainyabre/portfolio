@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router";
 import "./Article.css";
+import { setArticleURL, setAuthorURL } from "../../../../utils/constants";
+import Prism from "prismjs";
+import "../../../../utils/prism.css"
 const HtmlToReactParser = require("html-to-react").Parser;
 const htmlToReactParser = new HtmlToReactParser();
+
 
 
 const Article = () => {
@@ -14,27 +18,28 @@ const Article = () => {
   const [author, setAuthor] = useState("");
   useEffect(() => {
     axios
-      .get(`https://sypartage.herokuapp.com/api/articles/${articleId}/`)
+      .get(setArticleURL(articleId))
       .then((res) => {
         if (res.statusText === "OK") {
           setArticle(res.data);
-
+          Prism.highlightAll();
           setLoading(false);
         }
       });
   }, [articleId]);
 
   useEffect(() => {
-      console.log(article.author)
+     
     axios
-      .get(`https://sypartage.herokuapp.com/api/auth/users/${article.author}/`)
+      .get(setAuthorURL(article))
       .then((res) => {
         if (res.statusText === "OK") {
           setAuthor(res.data);
+          console.log(res.data)
           setLoading(false);
         }
       });
-  }, [article.author]);
+  }, [article.author,article]);
 
   const result = htmlToReactParser.parse(article.content);
  
@@ -53,7 +58,7 @@ const Article = () => {
       <div className="article-content">{result}</div>
     </div>
   );
-  return <div>{loading ? <h4>loading...</h4> : articleDisplay}</div>;
+  return <div className="article_page">{loading ? <h4>loading...</h4> : articleDisplay}</div>;
 };
 
 export default Article;
