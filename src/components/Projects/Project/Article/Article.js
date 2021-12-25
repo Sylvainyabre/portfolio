@@ -22,7 +22,6 @@ const Article = () => {
       .then((res) => {
         if (res.statusText === "OK") {
           setArticle(res.data);
-          Prism.highlightAll();
           setLoading(false);
         }
       });
@@ -40,6 +39,9 @@ const Article = () => {
         }
       });
   }, [article.author,article]);
+  useEffect(() => {
+    Prism.highlightAll();
+  });
 
   const result = htmlToReactParser.parse(article.content);
  
