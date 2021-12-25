@@ -3,7 +3,6 @@
   margin-bottom: 50px !important;
   width: 80% !important;
   border: 3px ridge;
-  
   margin: auto;
   padding: 15px 15px;
   box-sizing: border-box;
@@ -18,9 +17,8 @@
 
 span.display_title {
   border-radius: 14px;
-  font-size: 5rem;
+  font-size: 3.7rem;
   margin: auto;
-  text-decoration: underline;
   color: rgb(101, 137, 179);
   position: relative;
 }
@@ -46,10 +44,10 @@ h6>i{
 
 @media screen and (max-width: 950px) {
   span.display_title {
-    font-size: 1rem;
+    font-size: 1.12rem;
   }
   .article_display{
-    width: 95%;
+    width: 97% !important;
   }
 }
 

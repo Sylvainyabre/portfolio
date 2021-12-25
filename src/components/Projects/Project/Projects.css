@@ -20,6 +20,9 @@
   margin: auto;
   justify-self: center;
 }
+.card{
+  margin-bottom: 15px;
+}
 .pagination-container {
   width: 90%;
   height: 50px;

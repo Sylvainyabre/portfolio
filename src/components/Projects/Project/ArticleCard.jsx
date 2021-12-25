@@ -8,7 +8,7 @@ export function ArticleCard({ article, profile }) {
     <>
      
           <Col>
-            <Card style={{ height: '600px' }}>
+            <Card className= "card"style={{ height: '600px' }}>
               <Card.Img variant="top" src={article.illustration} />
               <Card.Body>
                 <Link to={`/article/${article.id}`}>
