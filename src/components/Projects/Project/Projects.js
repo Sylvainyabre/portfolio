@@ -6,7 +6,7 @@ import ReactPaginate from "react-paginate";
 import { ArticleCard } from './ArticleCard';
 import {Row,Spinner} from "react-bootstrap"
 import { API_URL ,PROFILE_URL,SUCCESS_STATUS} from "../../../utils/constants";
-import { CustomPagination } from "./Pagination";
+
 
 
 function Projects() {
