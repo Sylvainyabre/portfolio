@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router";
 import "./Article.css";
-import { setArticleURL, setAuthorURL } from "../../../../utils/constants";
+import { setArticleURL, setAuthorURL, SUCCESS_STATUS } from "../../../../utils/constants";
 import Prism from "prismjs";
 import "../../../../utils/prism.css"
 const HtmlToReactParser = require("html-to-react").Parser;
@@ -20,7 +20,7 @@ const Article = () => {
     axios
       .get(setArticleURL(articleId))
       .then((res) => {
-        if (res.statusText === "OK") {
+        if (res.statusText === SUCCESS_STATUS) {
           setArticle(res.data);
           setLoading(false);
         }
@@ -32,9 +32,8 @@ const Article = () => {
     axios
       .get(setAuthorURL(article))
       .then((res) => {
-        if (res.statusText === "OK") {
+        if (res.statusText === SUCCESS_STATUS) {
           setAuthor(res.data);
-          console.log(res.data)
           setLoading(false);
         }
       });

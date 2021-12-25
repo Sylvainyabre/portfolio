@@ -1,5 +1,6 @@
 export const API_URL = "https://sypartage.herokuapp.com/api/articles/";
 export const PROFILE_URL = "https://sypartage.herokuapp.com/api/auth/profiles/1/";
+export const SUCCESS_STATUS = "OK";
 export function setArticleURL(id){
     return `https://sypartage.herokuapp.com/api/articles/${id}/`
 }

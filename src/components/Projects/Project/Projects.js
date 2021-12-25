@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
-import Project from "../Project";
+import "../Project.css"
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { ArticleCard } from './ArticleCard';
 import {Row,Spinner} from "react-bootstrap"
-import { API_URL ,PROFILE_URL} from "../../../utils/constants";
+import { API_URL ,PROFILE_URL,SUCCESS_STATUS} from "../../../utils/constants";
+import { CustomPagination } from "./Pagination";
 
 
 function Projects() {
@@ -25,25 +26,25 @@ function Projects() {
   };
   useEffect(() => {
     axios.get(API_URL).then((res) => {
-      if (res.statusText === "OK") {
+      if (res.statusText === SUCCESS_STATUS) {
         setArticles(res.data);
         setLoading(false);
       }
     });
-    //Prism.highlightAll();
+
   }, []);
   useEffect(() => {
     axios
       .get(PROFILE_URL)
       .then((res) => {
-        if (res.statusText === "OK") {
+        if (res.statusText === SUCCESS_STATUS) {
           setProfile(res.data);
           setLoading(false);
         }
       });
   }, []);
 
-  const articlesDisplay = pageArticles.filter((art)=>art.status === "published").map((article) => (
+  const publishedArticles = pageArticles.filter((art)=>art.status === "published").map((article) => (
     
     <ArticleCard article={article}  profile={profile} key={article.pub_date} />
     
@@ -51,10 +52,10 @@ function Projects() {
   return (
     <div className="projects-wrapper">
       <div className="projects ">
-        {loading ? <Spinner/> : <Row xs={1} md={3} xl={8} className ="cards">{articlesDisplay}</Row>}
+        {loading ? <Spinner/> : <Row xs={1} md={2} className ="cards">{publishedArticles}</Row>}
         <ReactPaginate
-          previousLabel="Previous"
-          nextLabel="Next"
+          previousLabel="<<"
+          nextLabel=">>"
           pageCount={pageCount}
           onPageChange={changePage}
           containerClassName="pagination-container"
@@ -63,6 +64,7 @@ function Projects() {
           disabledClassName="disabled-pagination"
           activeClassName="pagination-active"
         />
+        
       </div>
     </div>
   );
