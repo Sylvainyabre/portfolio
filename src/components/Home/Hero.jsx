@@ -13,7 +13,7 @@ function Hero() {
 		</div>
         
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-7xl font-bold  justify-center leading sm:text-5xl text-white">Welcome, I am</h1>
+            <h1 className="text-7xl font-bold  justify-center leading sm:text-5xl text-white sm:top-5">Welcome, I am</h1>
            
 			<h1 className="text-5xl font-bold text-violet-400 leading-none sm:text-6xl">
 				Sylvain Yabre
