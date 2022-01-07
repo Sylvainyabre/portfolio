@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Hero from "./Hero";
 
 
 export const ExtLink = ({ to, text }) => {
@@ -8,23 +9,24 @@ export const ExtLink = ({ to, text }) => {
 };
 
 function Home() {
-  const languages = ["english", "french"];
-  const [language, setLanguage] = useState(languages[0]);
-  const isFrench = (lang) => {
-    return lang === "french";
-  };
-  const changeLanguage = (lang) => {
-    lang === languages[0]
-      ? setLanguage(languages[1])
-      : setLanguage(languages[0]);
-  };
+  // const languages = ["english", "french"];
+  // const [language, setLanguage] = useState(languages[0]);
+  // const isFrench = (lang) => {
+  //   return lang === "french";
+  // };
+  // const changeLanguage = (lang) => {
+  //   lang === languages[0]
+  //     ? setLanguage(languages[1])
+  //     : setLanguage(languages[0]);
+  // };
   return (
-    <div className="home-wrapper ">
-      <div className="home">
+    <div className="ho">
+      <Hero/>
+      {/* <div className="home">
         <div className="left">
           <img
             className="author-image"
-            src={require("./images/yabre.JPG").default}
+            src={require("./images/yabre.JPG")}
             alt="Sylvain Yabre in blue suit"
           />
         </div>
@@ -68,7 +70,7 @@ function Home() {
             {isFrench(language) ? "English" : "Français"}
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

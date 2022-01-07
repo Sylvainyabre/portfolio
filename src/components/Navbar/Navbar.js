@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import MobileNav from "./MobileNav";
+import "./tech-logo.png";
 
 
 
@@ -16,7 +17,7 @@ function Navbar() {
       <div className = "logo-section">
         <div className="site-logo">
         <img
-          src={require("./tech-logo.png").default}
+          src={require("./tech-logo.png")}
           alt="Yabré tech bent text"
           className="logo-image rounded-circle"
         />

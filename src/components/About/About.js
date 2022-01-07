@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
+import Skills from "./Skills";
 
 function About() {
   const languages = ["english", "french"];
@@ -14,6 +15,7 @@ function About() {
   };
   return (
     <div className="about">
+      <Skills/>
       <section className="presentation">
         {!isFrench(language) ? <h1>Who am I ?</h1> : <h1>Qui suis-je ?</h1>}
         {!isFrench(language) ? (
@@ -36,16 +38,7 @@ function About() {
             international à Singapore.{" "}
           </p>
         )}
-        <figure>
-            
-            <img
-          src={require("./world_map.svg").default}
-          alt="map of the world with place I lived in"
-          className="world_map"
-          
-        />
-        <figcaption> Green represents places I lived in.</figcaption>
-        </figure>
+        
         
       </section>
       <section className="hobbies">

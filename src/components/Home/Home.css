@@ -6,7 +6,9 @@
   width: auto;
   background: #002233;
 }
-
+.hero{
+  background: #002233;
+}
 .right {
   top: 30%;
   color: white;

@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Project/Projects'
 import Article from './components/Projects/Project/Article/Article';
+import "./index.css";
 
 
 
