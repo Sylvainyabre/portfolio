@@ -1,12 +1,10 @@
-import React from "react";
-import "../../index.css";
-import MyProject from "./MyProject";
+import React from 'react'
 
-function Skills() {
-  return (<>
-    <section className="m-4 md:m-8 dark:bg-coolGray-800 dark:text-coolGray-100">
+function MyProject() {
+    return (
+        <section className="m-4 md:m-8 dark:bg-coolGray-800 dark:text-coolGray-100">
       <div className="container mx-auto p-4 my-6 space-y-2 text-center">
-        <h2 className="text-5xl font-bold"> My Technical Skills</h2>
+        <h2 className="text-5xl font-bold "> My projects</h2>
       </div>
       <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <div className="flex flex-col items-center p-4">
@@ -22,17 +20,18 @@ function Skills() {
               clipRule="evenodd"
             ></path>
           </svg>
-          <h4 className="my-3 text-3xl font-semibold">
-            Backend-end Skills
+          <h4 className="my-3 text-3xl font-semibold ">
+            Brain Arena
           </h4>
           <div className="space-y-1 leading-tight">
-            <p>REST API development</p>
-            <p>Databases: MongoDB, Postgres</p>
-            <p>NodeJS, ExpressJS </p>
-            <p>Django's REST framework</p>
-            <p>AWS S3 integration</p>
-            <p>JWT Tokens, PassportJS,SSO</p>
-            <p>Twilio SendGrid integration</p>
+            <p>This is a prototypes of an online learning platform,</p>
+            <p>That I solo-designed and developed.</p>
+            <p>I am currently working on the production version.</p>
+            <p>This platform will help thousands of students victims of forced displacement in Burkina Faso </p>
+            <p>Developed with the MERN stack.</p>
+            <p>I Used the Sendgrid API to implement password resetting and communication to users.</p>
+            <p>Used New Relic to monitor performance and Tinymce to power advanced content production.</p>
+            
           </div>
         </div>
 
@@ -49,13 +48,14 @@ function Skills() {
               clipRule="evenodd"
             ></path>
           </svg>
-          <h4 className="my-3 text-3xl font-semibold">Front-end Skills</h4>
+          <h4 className="my-3 text-3xl font-semibold">Credit Card Default Predictor</h4>
           <div className="space-y-1 leading-tight">
-            <p>ReactJS</p>
-            <p>Full Stack Django Framework</p>
-            <p>HTML & CSS</p>
-            <p>Redux,ReduxToolkit</p>
-            <p>Tailwindcss</p>
+            <p> Tech stack: R, Jupiter Lab, K-nearest Neighbors Algorithm</p>
+            <p>We collaborated with 3 classmates on a data science project.</p>
+            <p>I was responsible for cleaning and visualizing a real data set of over 30,000 rows using the tidyverse library.</p>
+            <p>We used the K-Nearest Neighbors (KNN) classification and the tidymodels library  to predict credit card default.</p>
+            <p> I also played a part in writing a scientific report of our work.</p>
+            
           </div>
         </div>
 
@@ -72,20 +72,19 @@ function Skills() {
               clipRule="evenodd"
             ></path>
           </svg>
-          <h4 className="my-3 text-3xl font-semibold">Developer Tools</h4>
+          <h4 className="my-3 text-3xl font-semibold">Full-stack Blog</h4>
           <div className="space-y-1 leading-tight">
-            <p>Git, Github,Jupiter Lab</p>
-            <p>Heroku, AWS</p>
-            <p>VS Code, PyCharm</p>
-            <p>RStudio</p>
-            <p> IntelliJ, Postman</p>
+            <p>Tech stack: Python, Django, AWS S3, Postgres</p>
+            <p>A personal blog to deliver content focussed on software development.</p>
+            <p>Used Ckeditor to power advanced content creation.</p>
+            <p>Used AWS S3 buckets to manage static files.</p>
+            <p>Serialized the blog posts to offer an external API using the Django REST framework</p>
+            
           </div>
         </div>
       </div>
     </section>
-    <MyProject/>
-	</>
-  );
+    )
 }
 
-export default Skills;
+export default MyProject
