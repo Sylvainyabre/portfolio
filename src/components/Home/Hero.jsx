@@ -13,7 +13,7 @@ function Hero() {
 		</div>
         
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-7xl font-bold  justify-center leading sm:text-5xl">Welcome, I am</h1>
+            <h1 className="text-7xl font-bold  justify-center leading sm:text-5xl text-white">Welcome, I am</h1>
            
 			<h1 className="text-5xl font-bold text-violet-400 leading-none sm:text-6xl">
 				Sylvain Yabre
@@ -26,7 +26,7 @@ function Hero() {
                 With over two years of full-stack development experience.
 			</p>
 			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-				<Link to="/about" className="px-8 py-3 text-lg font-semibold rounded dark:bg-blue-500 bg-blue-500 dark:text-white">More About Me</Link>
+				<Link to="/about" className="px-8 py-3 text-lg font-semibold rounded dark:bg-blue-500 bg-blue-500 text-white dark:text-white">More About Me</Link>
 				<Link to="/projects" className="px-8 py-3 text-lg font-semibold border rounded border-coolGray-100 dark:border-coolGray-100">Visit My Blog</Link>
 			</div>
 		</div>
