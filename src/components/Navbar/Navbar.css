@@ -144,7 +144,7 @@
   width: 90%;
   border-bottom: 1px rgb(210, 231, 231) solid;
   list-style: none;
-  margin: auto;
+  margin: auto !important;
   text-decoration: none;
   margin-bottom: 20px;
  
